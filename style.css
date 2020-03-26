@@ -5,11 +5,9 @@ body  {
   font-family: 'Open Sans', sans-serif;
 }
 
-
 h1, h2, h3, p, a {
   font-family: 'Indie Flower', cursive;
 }
-
 
 h1 {
   font-size: 25px;
@@ -38,7 +36,7 @@ p {
 }
 
 #img_circle {
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
   border: 10px dotted #A13939;
 }
@@ -46,7 +44,6 @@ p {
 #img_circle:hover {
   border: 25px groove #A13939;
 }
-
 
 .recipe-img {
   width: 200px;
@@ -62,7 +59,6 @@ p {
   color: #30343f;
   opacity: 0.8;
 }
-
 
 .container {
   margin: 30px auto;
@@ -133,10 +129,31 @@ i:hover {
   font-size: 30px;
 }
 
-
 i {
   color: #DBB3B3;
   font-weight: 100;
   font-size: 18px;
+}
 
+
+@media(max-width: 900px) {
+  .container {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  #img_circle {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+
+  #img_circle {
+    width: 100%;
+  }
 }
